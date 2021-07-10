@@ -1,0 +1,28 @@
+i {
+  color: red;
+  font-size: 30px;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+.lists {
+  display: flex;
+  justify-content: center;
+}
+
+#ul,
+#ul2 {
+  list-style-type: none;
+}
