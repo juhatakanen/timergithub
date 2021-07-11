@@ -3,17 +3,7 @@ body {
 }
 
 ul {
-}
-
-li {
-}
-.vasen,
-.oikea {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main {
+  list-style-type: none;
 }
 .clock {
   display: flex;
@@ -28,9 +18,4 @@ li {
 .lists {
   display: flex;
   justify-content: center;
-}
-
-#ul,
-#ul2 {
-  list-style-type: none;
 }
