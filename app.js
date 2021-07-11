@@ -78,7 +78,6 @@ function luoAjastin() {
     // Kutsuu startTimeriä sekunnin välein
     let timer = setInterval(startTimer, 1000);
 
-
     if(totalSeconds > 0){
         ajastinSarake.children[ajastinSarake.children.length - 1].innerHTML = "00:00:00";
         stopTimer()
@@ -97,7 +96,7 @@ function luoAjastin() {
         minute = "0"+minute;
         if(seconds < 10)
         seconds = "0"+seconds;
-        ajastinSarake.children[ajastinSarake.children.length    - 1].innerHTML = hour + ":" + minute + ":" + seconds;
+        ajastinSarake.children[ajastinSarake.children.length - 1].innerHTML = hour + ":" + minute + ":" + seconds;
     }        
 
     function stopTimer() {
