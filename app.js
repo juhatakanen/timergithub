@@ -2,7 +2,9 @@
 const button = document.getElementById('button')
 let timerText = document.getElementById('timer-text')
 const ajastinSarake = document.getElementById("ul2")
+const nro_sarake = document.getElementById("nro_sarake")
 let i = 0
+let nro = 1
 let totalSeconds
 
 
@@ -17,26 +19,37 @@ function startClock() {
 // Kutsutaan kellonlyömisfuntiota sekunnin välein
 setInterval('startClock(), 1000')
 
-// Lisätään eventlistenerit
 button.addEventListener('click', luoAikahetkiKlikilla)
 document.addEventListener('keydown', luoAikahetkiSpacebarilla)
 
-// Klikkifunktio
 function luoAikahetkiKlikilla() {
-        // Lisää kellonajan listaan
+        lisaaJarjestysnumero()
         kellonaikaListaan()
-        // Luo klikkauksesta alkavan ajastimen
         luoAjastin()
 }
 
-// Spacebar-funktio
 function luoAikahetkiSpacebarilla(e) {
     if (e.keyCode == 32) {
-        // Lisää kellonajan listaan
+        lisaaJarjestysnumero()
         kellonaikaListaan()
-        // Luo klikkauksesta alkavan ajastimen
         luoAjastin()
     }
+}
+
+function lisaaJarjestysnumero() {
+    // Luo li-elementin
+    const jarjnro = document.createElement("li");
+    // Luo tekstin li-elementille
+    let textJarjNro = document.createTextNode(`${nro}`);
+    // Lisää tekstin elementtiin
+    jarjnro.appendChild(textJarjNro);
+    // Lisää elementin numerosarakkeeseen
+    nro_sarake.appendChild(jarjnro);
+    // Luo id:n li-elementille
+    jarjnro.setAttribute("id", "nro")
+    // Kasvata jarj.nroa
+    nro++
+
 }
 
 // Lisää eventin kellonajan listaan
