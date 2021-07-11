@@ -1,21 +1,36 @@
 body {
-  background-color: #4ea8de;
+  background-color: #2a9d8f;
+  font-size: 20px;
+  color: black;
 }
 
 ul {
   list-style-type: none;
+  width: 75px;
+  padding: 0 10px 0 10px;
 }
-.clock {
+li {
+  text-align: center;
+}
+p {
+  margin: 20px 0 0 0;
+}
+.button {
+  background-color: #e9c46a; /* Green */
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.main-divs {
   display: flex;
   justify-content: center;
 }
 
-.button-div {
+.ul-div {
   display: flex;
-  justify-content: center;
-}
-
-.lists {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

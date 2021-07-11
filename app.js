@@ -67,7 +67,7 @@ function luoAjastin() {
     // Luo li-elementin
     const alkavaAjastin = document.createElement("li");
     // Luo tekstin li-elementille
-    const textAlkavaAjastin = document.createTextNode   ('00:00:00');
+    const textAlkavaAjastin = document.createTextNode('00:00:00');
     // Lisää tekstin elementtiin
     alkavaAjastin.appendChild(textAlkavaAjastin);
     // Lisää elementin ul2-ään
