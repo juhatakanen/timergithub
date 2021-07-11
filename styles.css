@@ -1,10 +1,19 @@
-i {
-  color: red;
-  font-size: 30px;
+body {
+  background-color: #4ea8de;
 }
 
+ul {
+}
+
+li {
+}
+.vasen,
+.oikea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main {
-  background-color: blue;
 }
 .clock {
   display: flex;
@@ -16,10 +25,6 @@ i {
   justify-content: center;
 }
 
-.timer {
-  display: flex;
-  justify-content: center;
-}
 .lists {
   display: flex;
   justify-content: center;
